@@ -47,7 +47,7 @@ var paths = {
 // Concat & Minify JS
 gulp.task('minify-js', function(){
 	return gulp.src([paths.scripts.vendor, paths.scripts.src])
-		.pipe(concat('all-'+ pkg.version + '.min.js'))
+		.pipe(concat('prettyslider-'+ pkg.version + '.min.js'))
 		.pipe(gulp.dest(paths.scripts.dest))
 		.pipe(gulpif(isProduction, uglify()))
 		.pipe(gulp.dest(paths.scripts.dest));
@@ -65,7 +65,7 @@ gulp.task('sass', function () {
 			gutil.log(gutil.colors.green('Sass styles compiled successfully.'));
 		}
 	}))
-	.pipe(concat('main-' + pkg.version + '.min.css'))
+	.pipe(concat('prettyslider-' + pkg.version + '.min.css'))
 	.pipe(gulpif(isProduction, minifyCSS()))
 	.pipe(gulp.dest(paths.styles.dest))
 });

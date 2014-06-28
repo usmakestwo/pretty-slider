@@ -1,7 +1,7 @@
 {
-  "name": "angular-slider",
+  "name": "pretty-slider",
   "version": "0.0.1",
-  "author": "Gonzalo Vazquez",
+  "author": "Us Makes Two",
   "description": "A jquery-less slider build with Angular",
   "private": true,
   "contributors": [
