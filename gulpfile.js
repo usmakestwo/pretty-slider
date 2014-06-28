@@ -65,7 +65,7 @@ gulp.task('sass', function () {
 			gutil.log(gutil.colors.green('Sass styles compiled successfully.'));
 		}
 	}))
-	.pipe(concat('main-' + pkg.version + '.min.css'))
+	.pipe(concat('prettyslider-' + pkg.version + '.min.css'))
 	.pipe(gulpif(isProduction, minifyCSS()))
 	.pipe(gulp.dest(paths.styles.dest))
 });
