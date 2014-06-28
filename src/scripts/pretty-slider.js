@@ -1,7 +1,7 @@
 /**
  *  License
  *  angular-slider
- *  http://github.com/gonzalovazquez/angular-slider
+ *  https://github.com/usmakestwo/angular-slider
  *  License: MIT
 **/
 
