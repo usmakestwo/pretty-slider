@@ -143,7 +143,7 @@ var inputEvents = {
 	}
 };
 
-angular.module('ui-slider', []).directive('slider', ['$timeout', function($timeout) {
+angular.module('prettySlider', []).directive('prettySlider', ['$timeout', function($timeout) {
 	return {
 		restrict: 'EA',
 		scope: {
