@@ -1,5 +1,5 @@
-pretty-slider
-==============
+
+# Pretty Slider
 
 Slider implementation for AngularJS, without jQuery dependencies. Requires AngularJS v1.1.4 or higher.
 
