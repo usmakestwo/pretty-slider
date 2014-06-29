@@ -1,5 +1,5 @@
-Pretty Slider
-==============
+
+# Pretty Slider
 
 Slider implementation for AngularJS, without jQuery dependencies. Requires AngularJS v1.1.4 or higher.
 
@@ -11,23 +11,23 @@ License: MIT
         <li ng-repeat="item in items">
             <p>Name: {{item.name}}</p>
             <p>Cost: {{item.cost}}</p>
-            <div slider floor="100" ceiling="1000" step="50" precision="2" ng-model="item.cost"></div>
+            <div pretty-slider floor="100" ceiling="1000" step="50" precision="2" ng-model="item.cost"></div>
         </li>
     </ul>
 
 And your HTML:
 
-    <div slider floor="100" ceiling="1000" step="50" precision="2" ng-model="item.cost"></div>
+    <div pretty-slider floor="100" ceiling="1000" step="50" precision="2" ng-model="item.cost"></div>
 
 ### Usage:
 
-Make sure to load AngularJS first, and then `angular-slider.js`. Also include the related `angular-slider.css`.
+Make sure to load AngularJS first, and then `pretty-slider.js`. Also include the related `pretty-slider.css`.
 
 To build use `gulp watch`.
 
-The module name is named `slider`. To enable it, you must simply list it as a dependency in your app. Example:
+The module name is named `prettySlider`. To enable it, you must simply list it as a dependency in your app. Example:
 
-    var app = angular.module('app', ['uiSlider', 'ngResource', ...]);
+    var app = angular.module('app', ['prettySlider', 'ngResource', ...]);
 
 You can then use it in your templates like so:
 
@@ -35,7 +35,7 @@ You can then use it in your templates like so:
         ...
         <body>
             ...
-            <div slider ...></div>
+            <div pretty-slider ...></div>
         </body>
     </html>
 
