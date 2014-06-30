@@ -16,8 +16,11 @@
 <body>
 	<div ng-controller="ItemCtrl">
 		<h1>Angular Slider</h1>
-		<h3>Cost: {{item.cost}}</h3>
-		<div pretty-slider floor="0" ceiling="1000" step="10" precision="2" ng-model="item.cost"></div>
+		<section class="pretty-slider-container">	
+			<div pretty-slider floor="0" ceiling="1000" step="10" precision="2" ng-model="item.cost"></div>
+			<p>Cost: {{item.cost}}</p>
+		</section>
+
 		<p><a href="https://github.com/usmakestwo/angular-slider">Github repo</a></p>
 	</div>
 
