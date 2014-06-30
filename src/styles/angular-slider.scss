@@ -1,10 +1,6 @@
 @import 'variables';
 @import 'mixins';
 
-body {
-	background-color: $bg-color;
-}
-
 .pretty-slider-container {
 	width: 19em;
 	margin: 0 auto;
@@ -16,6 +12,7 @@ body {
 		color: $slider-fill;
 	}
 	.slider {
+		text-align: left;
 		display: inline-block;
 		position: relative;
 		height: 14px;
