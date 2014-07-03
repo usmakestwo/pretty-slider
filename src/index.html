@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>angular-slider</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- inject:html -->
-	<!-- any *.html files among your sources will go here as: <link rel="import" href="FILE"> -->
-	<!-- endinject -->
-	<!-- inject:css -->
-	<!-- any *.css files among your sources will go here as: <link rel="stylesheet" href="FILE"> -->
-	<!-- endinject -->
-</head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>angular-slider</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- inject:html -->
+  <!-- any *.html files among your sources will go here as: <link rel="import" href="FILE"> -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- any *.css files among your sources will go here as: <link rel="stylesheet" href="FILE"> -->
+  <!-- endinject -->
+  </head>
 <body>
-	<div ng-controller="ItemCtrl">
-		<h1>Angular Slider</h1>
-		<section class="pretty-slider-container">	
-			<div pretty-slider floor="0" ceiling="1000" step="10" precision="2" ng-model="item.cost"></div>
-			<p>Cost: {{item.cost}}</p>
-		</section>
-
-		<p><a href="https://github.com/usmakestwo/angular-slider">Github repo</a></p>
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-	<!-- inject:js -->
-	<!-- any *.js files among your sources will go here as: <script src="FILE"></script> -->
-	<!-- endinject -->
+  <div ng-controller="ItemCtrl">
+    <div pretty-slider floor="0" ceiling="1000" step="10" precision="2" ng-model="item.cost"></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  <!-- inject:js -->
+  <!-- any *.js files among your sources will go here as: <script src="FILE"></script> -->
+  <!-- endinject -->
 </body>
 </html>
